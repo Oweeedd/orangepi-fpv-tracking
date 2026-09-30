@@ -100,4 +100,4 @@ tail -f logs/autostart.log
 
 ## LightDM / autologin
 
-The recovered working machine had LightDM enabled. The tracking service is a **user graphical-session service**, so fully unattended boot requires that the intended user session actually starts (typically by LightDM autologin). The exact local LightDM autologin override was not present in the supplied files, therefore this repository does not fabricate or automatically overwrite it.
+The working machine had LightDM enabled. The tracking service is a **user graphical-session service**, so fully unattended boot requires that the intended user session actually starts (typically by LightDM autologin). The exact local LightDM autologin override was not present in the supplied files, therefore this repository does not fabricate or automatically overwrite it.
