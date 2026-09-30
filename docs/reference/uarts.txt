@@ -1,0 +1,3 @@
+crw-rw---- 1 root dialout 4, 66 Sep 30 21:35 /dev/ttyS2
+crw-rw---- 1 root dialout 4, 70 Sep 30 21:35 /dev/ttyS6
+crw-rw---- 1 root dialout 4, 71 Sep 30 21:35 /dev/ttyS7

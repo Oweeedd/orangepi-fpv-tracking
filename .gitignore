@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Runtime output
+logs/*
+!logs/.gitkeep
+recordings/*
+!recordings/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+*.avi
+*.mp4
+*.csv
+autostart.log
+
+# Models are deployment artifacts
+models/**/*.rknn
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Local config overrides
+config/local*.yaml

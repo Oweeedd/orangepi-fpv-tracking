@@ -1,0 +1,50 @@
+[    2.758839] Kernel command line: root=UUID=49e7df95-4c66-4664-9283-ea50ea6265d3 rootwait rootfstype=ext4 splash plymouth.ignore-serial-consoles console=tty1 consoleblank=0 loglevel=1 ubootpart= usb-storage.quirks= cma=128M  cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1
+[    3.783572] rockchip-cpuinfo cpuinfo: Serial		: e2fa06627f413dc0
+[    3.876595] Serial: 8250/16550 driver, 10 ports, IRQ sharing disabled
+[    3.876994] feb50000.serial: ttyS2 at MMIO 0xfeb50000 (irq = 40, base_baud = 1500000) is a 16550A
+[    3.877394] feb90000.serial: ttyS6 at MMIO 0xfeb90000 (irq = 41, base_baud = 1500000) is a 16550A
+[    3.877700] feba0000.serial: ttyS7 at MMIO 0xfeba0000 (irq = 42, base_baud = 1500000) is a 16550A
+[    4.040863] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.040871] usb usb1: SerialNumber: xhci-hcd.7.auto
+[    4.041323] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.041330] usb usb2: SerialNumber: xhci-hcd.7.auto
+[    4.042888] usbcore: registered new interface driver usbserial_generic
+[    4.042898] usbserial: USB Serial support registered for generic
+[    4.054140] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.054149] usb usb3: SerialNumber: fc800000.usb
+[    4.070643] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.070652] usb usb5: SerialNumber: fc880000.usb
+[    4.101385] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.101404] usb usb4: SerialNumber: fc840000.usb
+[    4.102571] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.102590] usb usb6: SerialNumber: fc8c0000.usb
+[    4.850287] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    4.850299] usb 4-1: SerialNumber: 000000000000
+[    4.880614] usb 6-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.429699] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[    8.140267] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    8.140278] usb 4-1: SerialNumber: 000000000000
+[    9.654530] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    9.654535] usb usb7: SerialNumber: xhci-hcd.11.auto
+[    9.654886] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    9.654890] usb usb8: SerialNumber: xhci-hcd.11.auto
+[   10.497268] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   10.497279] usb 4-1: SerialNumber: 000000000000
+[   11.779153] of_dma_request_slave_channel: dma-names property of node '/serial@feba0000' missing or empty
+[   11.779199] dw-apb-uart feba0000.serial: failed to request DMA, use interrupt mode
+[   21.440606] usb 8-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   21.440624] usb 8-1: SerialNumber: 012345678916
+[  142.562329] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  142.562340] usb 4-1: SerialNumber: 000000000000
+[  145.176272] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  145.176282] usb 4-1: SerialNumber: 000000000000
+[  151.564280] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  151.564291] usb 4-1: SerialNumber: 000000000000
+[  154.255266] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  154.255277] usb 4-1: SerialNumber: 000000000000
+[  170.991333] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  170.991343] usb 4-1: SerialNumber: 000000000000
+[  172.875300] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  172.875310] usb 4-1: SerialNumber: 000000000000
+[  448.345629] usb 8-1: New USB device strings: Mfr=2, Product=3, SerialNumber=4
+[  448.345647] usb 8-1: SerialNumber: 16681305

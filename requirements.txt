@@ -1,0 +1,6 @@
+# Minimal runtime for the direct RKNN path used by the tracking stand.
+numpy==2.4.5
+opencv-python==4.13.0.92
+pyserial==3.5
+PyYAML==6.0.3
+rknn-toolkit-lite2==2.3.2

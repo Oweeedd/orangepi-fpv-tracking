@@ -1,0 +1,19 @@
+[Unit]
+Description=Orange Pi FPV Tracking Stand
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=@REPO_DIR@
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=@HOME@/.Xauthority
+Environment=QT_X11_NO_MITSHM=1
+Environment=PYTHONUNBUFFERED=1
+ExecStart=@REPO_DIR@/scripts/start_tracking_fullscreen.sh
+Restart=always
+RestartSec=3
+StartLimitIntervalSec=0
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,101 @@
+model_path: models/yolov8n_416_rknn_model
+source: /dev/video1
+
+imgsz: 416
+conf: 0.30
+iou: 0.45
+max_det: 30
+
+detector:
+  core: all
+
+
+tracker:
+  same_class_only: true
+  max_center_dist: 180
+  iou_weight: 0.65
+  center_weight: 0.35
+  min_match_score: 0.15
+  memory_frames: 75
+  control_lost_frames: 8
+  lost_expand_per_frame: 8
+  reacquire_max_center_dist: 520
+  reacquire_min_match_score: 0.05
+  draw_lost_bbox: true
+  click_nearest_max_dist: 120
+  aux4_capture_max_center_dist: 999999
+
+camera:
+  width: 640
+  height: 480
+  fps: 30
+  rotate_180: true
+
+serial:
+  rx_port: /dev/ttyS2
+  fc_port: /dev/ttyS6
+  baudrate: 420000
+
+channels:
+  roll: 0
+  pitch: 1
+  throttle: 2
+  yaw: 3
+  aux3: 6
+  aux4: 7
+
+aux:
+  aux4_capture_threshold_us: 1300
+  aux4_mix_threshold_us: 1700
+  aux4_on_threshold_us: 1700
+
+control:
+  kp_yaw: 0.35
+  kp_pitch: 0.25
+  deadzone_x: 0.05
+  deadzone_y: 0.05
+  max_yaw: 0.30
+  max_pitch: 0.25
+  alpha: 0.30
+  invert_yaw: false
+  invert_pitch: false
+
+mixing:
+  enabled: true
+  max_auto_yaw: 0.25
+  max_auto_pitch: 0.20
+  pilot_override_threshold: 0.60
+  pilot_override_factor: 0.40
+
+failsafe:
+  lost_target_decay: 0.85
+
+ui:
+  window_name: TrackingCamera
+  draw_all_boxes: true
+  draw_debug: true
+  draw_crsf_panel: true
+  record_on_start: false
+
+classes:
+  allowed:
+    - person
+    - bicycle
+    - car
+    - motorcycle
+    - bus
+    - truck
+
+servo_pwm:
+  enabled: true
+  pwmchip: /sys/class/pwm/pwmchip1
+  channel: 0
+  period_ns: 20000000
+  min_us: 700
+  max_us: 2300
+  min_angle: 0
+  max_angle: 180
+  down_angle: 0
+  mid_angle: 45
+  front_angle: 90
+  invert: false
